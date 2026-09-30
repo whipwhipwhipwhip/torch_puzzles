@@ -1,0 +1,17 @@
+[project]
+name = "torch-puzzles"
+version = "0.1.0"
+description = "Tensor puzzles for learning PyTorch broadcasting"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "numpy",
+    "hypothesis",
+    "matplotlib",
+    "chalk-diagrams",
+    "colour",
+    "ipython",
+    "torchtyping",
+    "jupyterlab",
+]
