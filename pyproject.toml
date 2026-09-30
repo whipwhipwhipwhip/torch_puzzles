@@ -14,4 +14,10 @@ dependencies = [
     "ipython",
     "torchtyping",
     "jupyterlab",
+    "numba"
 ]
+
+[tool.uv.sources]
+# GPU puzzles' lib.py needs the patched chalk fork (exports `image`), as installed by the notebook
+chalk-diagrams = { git = "https://github.com/danoneata/chalk", branch = "srush-patch-1" }
+planar = { git = "https://github.com/chalk-diagrams/planar" }
